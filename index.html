@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My First Summer Making</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+  </style>
+</head>
+<body>
+  <h1>🚀 Hello, Summer Making!</h1>
+  <p>This is my first Hack Club project.</p>
+
+  <!-- Interactive click-counter button -->
+  <button id="clicker">Click me!</button>
+  <p>You’ve clicked <span id="count">0</span> times.</p>
+
+  <script>
+    const button = document.getElementById('clicker');
+    const countSpan = document.getElementById('count');
+    let count = 0;
+
+    button.addEventListener('click', () => {
+      count++;
+      countSpan.textContent = count;
+    });
+  </script>
+</body>
+</html>
